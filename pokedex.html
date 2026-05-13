@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pokedex.css">
+</head>
+
+<body>
+    <h1>MAESTRO POKEMON: Mario Antonio Segura Fuentes</h1>
+    <img src="pokemon.PNG" width="400px" style="top:0px; margin: 0 auto; display: block;">
+    <input type="text" placeholder="MewTwo" id="pokeName" name="pokeName" class="placeholder">
+    <button onclick="fetchPokemon()" class="button" style="margin: 10px auto;"> Presiona</button>
+    <br>
+    <div style="display: flex; justify-content: center; align-items: center; gap: 30px; margin: 20px auto; flex-wrap: wrap;">
+        <!-- Columna Izquierda: Información -->
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+            <div id="pokeNameDisplay" class="pokeimg1" style="position: relative; left: 0; top: 0; font-size: 16px;"></div>
+            <div id="pokeid" class="pokeimg1" style="position: relative; left: 0; top: 0; font-size: 24px; color: yellow; background: transparent; border: none; box-shadow: none; padding: 0;"></div>
+            <div id="pokeorder" class="pokeimg1" style="position: relative; left: 0; top: 0; font-size: 18px; color: orange; background: transparent; border: none; box-shadow: none; padding: 0;"></div>
+            <div id="pokeHe" class="pokeimg1" style="position: relative; left: 0; top: 0; font-size: 16px;"></div>
+            <div id="pokeWe" class="pokeimg1" style="position: relative; left: 0; top: 0; font-size: 16px;"></div>
+            <div id="pokeType" class="pokeimg1" style="position: relative; left: 0; top: 0; font-size: 16px;"></div>
+            <div id="pokeitem" class="pokeimg1" style="position: relative; left: 0; top: 0; font-size: 16px;"></div>
+            <div id="pokemove1" class="pokeimg1" style="position: relative; left: 0; top: 0; font-size: 16px;"></div>
+            <div id="pokemove2" class="pokeimg1" style="position: relative; left: 0; top: 0; font-size: 16px;"></div>
+            <div id="pokemove3" class="pokeimg1" style="position: relative; left: 0; top: 0; font-size: 16px;"></div>
+            <div id="pokemove4" class="pokeimg1" style="position: relative; left: 0; top: 0; font-size: 16px;"></div>
+        </div>
+
+        <!-- Columna Central: Imagen -->
+        <div>
+            <img src="Pokemon_NO.PNG" alt="PokeMaster" id="pokeImg" width="250px" class="pokeImg" style="margin: 0;">
+        </div>
+
+        <!-- Columna Derecha: Gráfica -->
+        <div class="grafica" style="margin: 0; width: 350px; height: 280px; position: relative; left: 0; top: 0;">
+            <canvas id="miCanvas"></canvas>
+        </div>
+    </div>
+    <script src="pokedex.js"></script>
+    <script src="Chart.js"></script>
+</body>
+
+</html>
